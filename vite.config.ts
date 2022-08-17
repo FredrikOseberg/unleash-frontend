@@ -13,7 +13,7 @@ if (!UNLEASH_BASE_PATH.startsWith('/') || !UNLEASH_BASE_PATH.endsWith('/')) {
 }
 
 export default defineConfig({
-    base: UNLEASH_BASE_PATH,
+    base: '/',
     build: {
         outDir: 'build',
         assetsDir: 'static',
