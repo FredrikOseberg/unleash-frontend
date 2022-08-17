@@ -31,6 +31,7 @@ export const App = () => {
 
     return (
         <SWRProvider isUnauthorized={!isLoggedIn}>
+            <h1>Custom app</h1>
             <Suspense fallback={<Loader />}>
                 <ConditionallyRender
                     condition={!hasFetchedAuth}
